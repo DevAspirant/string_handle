@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String handle </title>
+</head>
+<body>
+    <script>
+        let name = 'sdkaizen';
+        function output(msg){
+            console.log(msg);
+        }
+        output(name.charAt(3)); // الحصول على ٣ حرف من النص 
+        output(name['0']); // الحصول على اول حرف 
+        output(name.indexOf("sdk")); // عند البحث عن حرف في النص
+        output(name.length);// الحصول على طول الكلمة
+        output(name.substring(0,3));// استخراج جزء من النص
+        output(name.slice(0,3));// extract same as above
+        output(name.toUpperCase()); // طباعة الحروف كبيرة
+        output(name.toLowerCase());// طباعة الحروف صغيرة
+        output(name.replace("sdkaizen","sdk"));// تغيير النص
+    </script>
+</body>
+</html>
